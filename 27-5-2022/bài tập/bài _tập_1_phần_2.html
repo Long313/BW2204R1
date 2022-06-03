@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            background-color: #fffda9;
+            margin-left: auto;
+            margin-right: auto;
+            width:50%;
+        }
+        th {
+            background-color: #d4fdd6;
+            color: #0a38fd;
+            text-align: left;
+        }
+        .set-color {
+            color: #475caa;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit" method="get">
+        <table>
+            <tr>
+                <th colspan="2">ĐĂNG KÝ HỌC VIÊN</th>
+            </tr>
+            <tr>
+                <td class="set-color">Họ và tên</td>
+                <td>
+                    <input type="text" name="Họ và tên" size="20px">
+                </td>
+            </tr>
+            <tr>
+                <td class="set-color">Ngày sinh</td>
+                <td>
+                    <input type="text" name="Ngày sinh" size="15px">
+                </td>
+            </tr>
+            <tr>
+                <td class="set-color">Giới tính</td>
+                <td>
+                    <input type="radio" name="Giới tính" value="Nam">Nam
+                    <input type="radio" name="Giới tính" value="Nữ">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="set-color">Địa chỉ</td>
+                <td>
+                    <textarea name="Địa chỉ" cols="20" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="set-color">Lớp</td>
+                <td>
+                    <select name="Lớp">
+                        <option value="Chọn lớp">-Chọn lớp-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="set-color">Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="set-color">Điện thoại</td>
+                <td>
+                    <input type="number" name="Điện thoại">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="Đăng ký">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
