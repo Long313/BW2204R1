@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo form đơn giản</title>
+    <style>
+      table {
+        border-width: 5px 10px;
+        border-style: solid;
+        border-color: #d5feff;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      th {
+        background-color: #ff4c00;
+        color: #fff;
+      }
+      .set-color {
+        color: #374dbb;
+        text-align: right;
+        padding-right: 5px;
+        width:100px;
+      }
+      .set-color-checkbox {
+        color: #ff996d;
+        width:110px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="submit.php" method="get">
+      <table>
+        <tr>
+          <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+        </tr>
+        <tr>
+          <td class="set-color">Họ và tên</td>
+          <td colspan="3">
+            <input type="text" name="họ và tên"/>
+          </td>
+        </tr>
+        <tr>
+          <td class="set-color">Email</td>
+          <td colspan="3">
+            <input type="email" name="email" />
+          </td>
+        </tr>
+        <tr>
+          <td class="set-color">Sở thích</td>
+          <td class="set-color-checkbox">
+            <input type="checkbox" name="sở thích" value="Thể thao" /> Thể thao
+          </td>
+
+          <td class="set-color-checkbox" >
+            <input type="checkbox" name="sở thích" value="Âm nhạc" /> Âm nhạc
+          </td>
+          <td class="set-color-checkbox">
+            <input type="checkbox" name="sở thích" value="Đọc sách" /> Đọc sách
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="set-color-checkbox">
+            <input type="checkbox" name="sở thích" value="Lướt web" /> Lướt web
+          </td>
+          <td class="set-color-checkbox">
+            <input type="checkbox" name="sở thích" value="Chơi game" /> Chơi
+            game
+          </td>
+          <td class="set-color-checkbox">
+            <input type="checkbox" name="sở thích" value="Điện ảnh" /> Điện ảnh
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td class="set-color-checkbox">
+            <input type="checkbox" name="sơ thích" value="Du lịch" /> Du lịch
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td colspan="3">
+            <input type="submit" value="Gửi thông tin" />
+            <input type="reset" value="Nhập lại" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
