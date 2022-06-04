@@ -9,12 +9,22 @@
       .option {
         background-color: #fff;
       }
+      label {
+        font-weight: bold;
+      }
       div.option-selected {
         background-color: #fff7c0;
         padding:5px;
       }
       #change-display {
         display: none;
+      }
+      table,tr,td {
+        border: 1px solid rgb(190, 186, 186);
+        border-collapse: collapse;
+      }
+      tr:nth-child(odd){
+        background-color: rgba(205, 200, 200, 0.986);
       }
     </style>
   </head>
@@ -89,6 +99,7 @@
         <br />
         <input type="checkbox" name="purchase" value="month" id="" />Month
       </div>
+      <br>
       <div class="option" onclick="select(event)">
         <label for="pay" class="section">What would you pay new product</label>
         <br />
@@ -116,7 +127,8 @@
           >Please rate your level of agreement with the following
           statement</label
         >
-        <br />
+        <br>
+        <br>
         <table>
           <tr>
             <td></td>
